@@ -1,0 +1,358 @@
+/* ---reset css--- */
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ---header--- */
+header{
+    padding: 50px;
+}
+header li a{
+    font-size: 18px;
+    color: #220c0c;
+    background-color: #808080;
+    padding: 20px;
+    border-radius: 0 35px 0 35px;
+    margin-right: 100px;
+}
+header li a:hover{
+    background-color: #008000;
+}
+
+/* ---Main--- */
+main{
+    position: relative;
+}
+.rectangle{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #008000;
+    border-radius: 50%;
+    position: relative;
+    animation: wre 2s infinite;
+}
+@keyframes wre {
+    0%{top:0; left:0;}
+    25%{top:0; left: 470px;}
+    50%{top:170px; left: 470px;}
+    75%{top: 170px; left:0;}
+    100%{top:0; left:0;}
+}
+.p1{
+    font-size: 18px;
+}
+.p2{
+    font-size: 36px;
+}
+.p1, .p2{
+    text-align: center;
+    margin-top: 20px;
+}
+.info{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    top: 300px;
+    right: 50px;
+}
+.ghero{
+    width: 1px;
+    height: 500px;
+    background-color: #808080;
+    margin: 35px auto;
+}
+.text1, .text2, .text3, .text4{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+.text2{
+    top: 100px;
+    left: 50%;
+}
+.text3{
+    top: 200px;
+    right: 50%;
+}
+.text4{
+    top: 300px;
+    left: 50%;
+}
+.infotext{
+    width: 430px;
+    color: #000000;
+}
+.infotext:hover{
+    color: #008000;
+}
+.text2 .leaf{
+    transform: rotate(90deg);
+}
+.text4 .leaf{
+    transform: rotate(90deg);
+}
+.leaf{
+    width: 70px;
+    height: 70px;
+    background-color: #808080;
+    border-radius: 0 35px 0 35px;
+}
+.leaf:hover{
+    background-color: #008000;
+}
+
+/* ---Product Main--- */
+.product article{
+    width: 804px;
+    height: 600px;
+    overflow-y: scroll;
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.prod{
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+.add{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/add.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-indent: -9999999999px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.add a{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.prod:hover{
+    background-color: #808080;
+}
+.foto{
+    width: 222px;
+    height: 222px;
+    background-image: url(../img/product.png);
+    background-repeat: no-repeat;
+}
+.price{
+    font-size: 20px;
+}
+.name{
+    font-size: 18px;
+}
+.more{
+    font-size: 14px;
+    color: #220c0c;
+    background-color: #808080;
+    padding: 10px 20px;
+    border-radius: 0 35px 0 35px;
+}
+.more:hover{
+    background-color: #008000;
+}
+.foto, .price, .name{
+    margin-bottom: 20px;
+}
+.product nav{
+    margin: 50px;
+}
+.product ul li a{
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 0 35px 0 35px;
+}
+.product ul li a:hover{
+    background-color: #008000;
+}
+.product ul li{
+    margin-bottom: 50px;
+    text-align: end;
+}
+
+/* ---Market Main--- */
+.market section{
+    width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+.market h2{
+    margin: 50px 10px;
+}
+.fil{
+    width: 200px;
+    height: 200px;
+    background-color: #808080;
+    background-image: url(../img/market.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999999999px;
+    margin: 10px 10px;
+}
+.market a{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.online{
+    width: 420px;
+    height: 70px;
+    background-color: #808080;
+    background-image: url(../img/online.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999999999px;
+    margin: 10px 10px;
+}
+.online a{
+    display: block;
+    width: 420px;
+    height: 70px;
+}
+.market div:hover{
+    background-color: #008000;
+}
+.market .fil:hover{
+    background-image: url(../img/marketwhite.png);
+}
+
+/* ---Shop Main--- */
+.shop article{
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+.shop div:hover{
+    background-color: #008000;
+}
+.shop .fil1{
+    background-image: url(../img/shop1.png);
+}
+.shop .fil2{
+    background-image: url(../img/shop2.png);
+}
+.shop .fil3{
+    background-image: url(../img/shop3.png);
+}
+.shop .fil4{
+    background-image: url(../img/shop4.png);
+}
+.shop .fil5{
+    background-image: url(../img/shop5.png);
+}
+.shop .fil6{
+    background-image: url(../img/shop6.png);
+}
+.shop a{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.fil1:hover{
+    background-image: url(../img/shop11.png);
+}
+.fil2:hover{
+    background-image: url(../img/shop22.png);
+}
+.fil3:hover{
+    background-image: url(../img/shop33.png);
+}
+.fil4:hover{
+    background-image: url(../img/shop44.png);
+}
+.fil5:hover{
+    background-image: url(../img/shop55.png);
+}
+.fil6:hover{
+    background-image: url(../img/shop66.png);
+}
+
+/* ---responsive--- */
+@media only screen and (max-width: 820px) {
+    header ul{
+        justify-content: center;
+    }
+    header li a{
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 0 35px 0 35px;
+        margin-right: 50px;
+    }
+    .rectangle{
+        right: 50px;
+    }
+    .info{
+        width: 500px;
+        top: 300px;
+        right: 50px;
+    }
+    .ghero{
+        margin-left: 500px;
+    }
+    .text1, .text2, .text3, .text4{
+        width: 100%;
+        right: 0;
+    }
+    .text2{
+        top: 100px;
+        left: 0;
+    }
+    .text3{
+        top: 200px;
+    }
+    .text4{
+        top: 300px;
+        left: 0;
+    }
+    .text2 .leaf{
+        transform: rotate(180deg);
+    }
+    .text4 .leaf{
+        transform: rotate(180deg);
+    }
+    .market section{
+        right: 50px;
+    }
+    .shop article{
+        width: 440px;
+        top: 50px;
+        right: 50px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    
+}
